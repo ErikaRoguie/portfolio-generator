@@ -50,7 +50,7 @@ const promptUser =() => {
         }
     ]);
 };
-promptUser().then(answer => console.log(answers)).then(promptProject).then(projectAnswers => console.log(projectAnswers)).then(projectData =>{portfolioData.projects.push(projectData) if (projectData.confirmAddProject){return promptProject(portfolioData);} else {return portfolioData;}
+promptUser().then(answer => console.log(answers)).then(promptProject).then(projectAnswers => console.log(projectAnswers)).then(projectData =>{portfolioData.projects.push(projectData); if(projectData.confirmAddProject){return promptProject(portfolioData);} else {return portfolioData};
 });
 
 const promptProject = portfolioData => {
