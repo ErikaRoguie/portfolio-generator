@@ -1,0 +1,26 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "portfolio genrator",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErikaRoguie/portfolio-generator.git"
+  },
+  "keywords": [
+    "Erika",
+    "Rogueie"
+  ],
+  "author": "Erika",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErikaRoguie/portfolio-generator/issues"
+  },
+  "homepage": "https://github.com/ErikaRoguie/portfolio-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
