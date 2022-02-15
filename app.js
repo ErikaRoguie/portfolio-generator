@@ -129,7 +129,7 @@ Add a New Project
 promptUser()
   .then(promptProject)
   .then(portfolioData => {    
-    const pageHTML = generatePage();
+    // const pageHTML = generatePage();
     // will be uncommented in lesson 4
      const pageHTML = generatePage(portfolioData);
      fs.writeFile('./index.html', pageHTML, err => {

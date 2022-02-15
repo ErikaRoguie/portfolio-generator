@@ -47,15 +47,13 @@ const generateAbout = aboutText => {
         return '';
     }
 
-    return '
-    <section class="my-3" id="about">
-      <h2 class="text-dark bg-primary p-2 display-inline-block">About Me</h2> 
-      <p>${aboutText}</p>
-    </section>
-    ';
+    var thing = '<section class="my-3" id="about">\n<h2 class="text-dark bg-primary p-2 display-inline-block">About Me</h2>\n<p>${aboutText}</p>\n</section>'
+
+    return thing
+   
 };
 
-module.exports = (name, github) => {
+module.exports = (templateData) => {
     console.log(templateData);
     //destructure page data by section
     const {projects, about, ...header }= templateData
@@ -82,8 +80,8 @@ module.exports = (name, github) => {
             </div>
         </header>
         <main class = "container my-5">
-            ${generatAbout(about)}
-            ${gerateProgects(projects)}
+            ${generateAbout(about)}
+            ${generateProjects(projects)}
 
         <section class="my-3" id="about">
           <h2 class="text-dark bg-primary p-2 display-inline-block">About Me</h2>
