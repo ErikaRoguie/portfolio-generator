@@ -50,7 +50,7 @@ const generateAbout = aboutText => {
     var thing = '<section class="my-3" id="about">\n<h2 class="text-dark bg-primary p-2 display-inline-block">About Me</h2>\n<p>${aboutText}</p>\n</section>'
 
     return thing
-   
+  
 };
 
 module.exports = (templateData) => {
