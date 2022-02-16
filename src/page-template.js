@@ -1,3 +1,4 @@
+
 //create the about section
 const generateProjects = projectsArr => {
   return `
@@ -57,6 +58,9 @@ module.exports = (templateData) => {
     console.log(templateData);
     //destructure page data by section
     const {projects, about, ...header }= templateData
+
+const generatePage = (name, github) => {
+
     return `
     <!DOCTYPE html> 
     <html lang="en"> 
@@ -96,3 +100,4 @@ module.exports = (templateData) => {
     </html>
     `;
 };
+
